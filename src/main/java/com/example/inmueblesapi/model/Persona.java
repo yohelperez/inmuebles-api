@@ -1,4 +1,4 @@
-package com.inmuebles.model;
+package com.example.inmueblesapi.model;
 
 public class Persona {
     private int id;

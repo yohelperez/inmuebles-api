@@ -1,4 +1,4 @@
-package com.inmuebles.model;
+package com.example.inmueblesapi.model;
 
 import java.time.LocalDate;
 
@@ -6,12 +6,12 @@ public class Contrato {
     private int idPersona;
     private int idInmueble;
     private int numeroContrato;
-    private LocalDate fecha;
+    private String fecha;
 
     public Contrato() {
     }
 
-    public Contrato(int idPersona, int idInmueble, int numeroContrato, LocalDate fecha) {
+    public Contrato(int idPersona, int idInmueble, int numeroContrato, String fecha) {
         this.idPersona = idPersona;
         this.idInmueble = idInmueble;
         this.numeroContrato = numeroContrato;
@@ -42,11 +42,11 @@ public class Contrato {
         this.numeroContrato = numeroContrato;
     }
 
-    public LocalDate getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocalDate fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

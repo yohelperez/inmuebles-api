@@ -1,4 +1,5 @@
-package com.inmuebles.model;
+package com.example.inmueblesapi.model;
+
 import java.sql.*;
 public class DBConexion {
     private static final String URL = "jdbc:mysql://localhost/inmuebles_db?serverTimezone=UTC";
@@ -13,17 +14,17 @@ public class DBConexion {
         return DriverManager.getConnection(URL, USER, PASS);
     }
 
-    public static void close(ResultSet rs) throws SQLException {
+    public static void cerrar(ResultSet rs) throws SQLException {
         rs.close();
     }
 
 
-    public static void close(PreparedStatement ps) throws SQLException {
+    public static void cerrar(PreparedStatement ps) throws SQLException {
         ps.close();
     }
 
 
-    public static void close(Connection connection) throws SQLException {
+    public static void cerrar(Connection connection) throws SQLException {
         connection.close();
     }
 }
