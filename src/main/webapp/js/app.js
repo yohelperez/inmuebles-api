@@ -1,6 +1,7 @@
 document.getElementById('searchButton').addEventListener('click', function() {
     var searchText = document.getElementById('searchText').value;
 
+    //Realiza una peticion a la API con el texto de busqueda
     fetch('/api?searchText=' + encodeURIComponent(searchText))
         .then(response => response.json())
         .then(function(data) {
@@ -8,7 +9,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
             var resultadosBody = document.getElementById('resultadosBody');
             resultadosBody.innerHTML = '';
 
-
+            //Recorre los elementos obtenidos de la consulta y los agrega a la tabla
             data.map((item) => {
                 const row = resultadosBody.insertRow();
                 row.insertCell().textContent = item.nombre;

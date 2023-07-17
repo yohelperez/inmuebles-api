@@ -1,6 +1,5 @@
 package com.example.inmueblesapi.model;
 
-import java.time.LocalDate;
 
 public class Registro {
     String nombre;

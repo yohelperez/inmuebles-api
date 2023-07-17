@@ -32,8 +32,8 @@ public class RegistroDao {
                 "INNER JOIN inmueble as i on i.id = c.idInmueble " +
                 "WHERE p.nombre LIKE ? OR p.apellido LIKE ? OR p.correo LIKE ?";
 
-        List<Registro> registros = new ArrayList<>();
-        Gson g = new Gson();
+        List<Registro> registros = new ArrayList<>();   //Arreglo de registros de la base de datos
+        Gson g = new Gson();    //gson para convertir la la lista registros a json
 
         try {
             this.conexionDB = getConexion();
