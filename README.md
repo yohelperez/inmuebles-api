@@ -3,27 +3,27 @@
 ### Preview
 ![image](https://github.com/yohelperez/inmuebles-api/assets/55060788/6ffa8adc-8d52-4925-8016-b098c3ef95bb)
 
-Inmuebles-api is web application that provides a service to consult the registry of properties that have been inhabited by several people. It allows to store information about people, addresses and real estate, and provides an interface to search for people and their respective associated addresses.
+Inmuebles-api es una aplicación web que brinda un servicio para consultar el registro de propiedades que han sido habitadas por varias personas. Permite almacenar información sobre personas, direcciones y bienes inmuebles, y proporciona una interfaz para buscar personas y sus respectivas direcciones asociadas.
 
-### Used technology
-* Java 8 (Servlets and api)
+### Tecnología usada
+* Java 8 (Servlets y api)
 * mysql
 * javascript
 * HTML
 * CSS
 
-### Requirements
+### Requisitos
 
-* Java Development Kit (JDK) 8 or higher.
-* MySQL Server.
-* A compatible web application server (for example, Apache Tomcat).
+* Java (JDK) 8 o superior.
+* Servidor MySQL.
+* Un servidor de aplicaciones web compatible (por ejemplo, Apache Tomcat).
 
-### Database configuration
-* Create a MySQL database with the name "inmuebles_db".
-* Run the database.sql script to create the necessary tables.
+### Configuración de la base de datos
+* Crear una base de datos MySQL con el nombre "inmuebles_db".
+* Ejecute el script database.sql (ubicado en el paquete "resources") para crear las tablas necesarias.
 
-### Project settings
-* Clone this repository to your local machine.
-* Import the project into your Java development environment (for example, IntelliJ IDEA).
-* Set the database credentials in the DBConnection.java file located at src/main/java/com/example/realestateapi/database/.
-* Deploy the application to your web application server (for example, Apache Tomcat).
+### Configuración del proyecto
+* Clone este repositorio en su máquina local.
+* Importe el proyecto a su entorno de desarrollo Java (por ejemplo, IntelliJ IDEA).
+* Configure las credenciales de la base de datos en el archivo DBConnection.java ubicado en src/main/java/com/example/inmueblesapi/model/DBConexion/.
+* Implemente la aplicación en su servidor de aplicaciones web (por ejemplo, Apache Tomcat).
